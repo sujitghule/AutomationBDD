@@ -1,0 +1,139 @@
+[
+  {
+    "line": 6,
+    "elements": [
+      {
+        "start_timestamp": "2021-09-24T16:53:33.638Z",
+        "before": [
+          {
+            "result": {
+              "duration": 918473400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.autonationpractice.stepdef.Cartpage_stepDef.temp(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 2208209800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.autonationpractice.stepdef.Hooks.setUp(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.autonationpractice.stepdef.Landingpage_stepDef.temp(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.autonationpractice.stepdef.Productpage_stepDef.temp(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 44,
+        "name": "Validate cart product value",
+        "description": "",
+        "id": "all-test-on-product-page-of-web-application;validate-cart-product-value",
+        "after": [
+          {
+            "output": [
+              "Test case is passed, No screenShot is captured."
+            ],
+            "result": {
+              "duration": 8983700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.autonationpractice.stepdef.Hooks.takeScreenShot(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "output": [
+              "Browser Closed"
+            ],
+            "result": {
+              "duration": 1277268800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.autonationpractice.stepdef.Hooks.cleanUp(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 8582879700,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "User open the browser",
+            "match": {
+              "location": "com.autonationpractice.stepdef.Landingpage_stepDef.user_open_the_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5255725700,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "user add three product in cart",
+            "match": {
+              "location": "com.autonationpractice.stepdef.Productpage_stepDef.user_add_three_product_in_cart()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 57965500,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "user validate the cart product value",
+            "match": {
+              "location": "com.autonationpractice.stepdef.Productpage_stepDef.user_validate_the_cart_product_value()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ProductPageTest"
+          },
+          {
+            "name": "@Validatecart"
+          }
+        ]
+      }
+    ],
+    "name": "All test on product page of web application",
+    "description": "\t10. Fetch the all product price and get its total\n\t11. Send a Friend Feature\n  17. Validate cart value is updating\n  18. Validate same products added in cart\n  20. Validate a product can be removed from cart feature",
+    "id": "all-test-on-product-page-of-web-application",
+    "keyword": "Feature",
+    "uri": "classpath:features/ProductPage.feature",
+    "tags": [
+      {
+        "name": "@ProductPageTest",
+        "type": "Tag",
+        "location": {
+          "line": 5,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
