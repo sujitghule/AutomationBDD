@@ -73,4 +73,8 @@ public interface Locator {
 	
 	public static By productColorBlue_Locator = By.xpath("//ul[@class='color_to_pick_list clearfix']/li/a[@id='color_2']");
 	public static By ColorChangeProduct_Locator = By.xpath("//img[@id='bigpic']");
+	
+
+	public static By searchBox_Locator = By.xpath("//input[@id='search_query_top']");
+	public static By searchBoxSuggestion_Locator = By.xpath("//div[@class='ac_results']//li");
 }

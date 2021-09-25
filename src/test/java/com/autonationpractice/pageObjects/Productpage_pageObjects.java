@@ -24,7 +24,7 @@ import io.cucumber.java.Scenario;
 
 public class Productpage_pageObjects  extends TestContext implements Locator, Variables{
 	private static final Logger logger = LogManager.getLogger(Productpage_pageObjects.class);
-	
+
 	WebDriver driver;
 	WebDriverWait wait;
 	Scenario scn;
@@ -49,13 +49,13 @@ public class Productpage_pageObjects  extends TestContext implements Locator, Va
 	{
 		action.Click(Dresses_locator);
 	}
-	
+
 	public void Fetch_all_product_prices()
 	{
 		List<WebElement> price = driver.findElements(priceOfProduct_locator);
 		float price_total = 0.00f;
 		float Expected_Total = 152.87f;
-	
+
 		for (int i = 0; i < price.size(); i++) {
 			javaScript_util.scrollIntoView_ByLocator(ProductView_Locator);
 			javaScript_util.drawBorder_ByElement(price.get(i));
@@ -64,8 +64,8 @@ public class Productpage_pageObjects  extends TestContext implements Locator, Va
 		Assert.assertEquals("Product price total are not match", Expected_Total, price_total, Expected_Total);
 		logger.info("The sum of all products Match with actual Total");
 	}
-	
-	
+
+
 	public void login(String username, String password)
 	{
 		action.Click(signIn);
@@ -75,7 +75,7 @@ public class Productpage_pageObjects  extends TestContext implements Locator, Va
 		logger.info("Enter password ::> " + password);
 		action.Click(Sign_In);
 		logger.info("click on SignIn Button.");
-		
+
 	}
 
 	public void select_T_shirt_category()
@@ -114,7 +114,7 @@ public class Productpage_pageObjects  extends TestContext implements Locator, Va
 
 		Assert.assertEquals("Your e-mail has been Not sent successfully",sucess,name);
 		logger.info("Send E-mail Successfully");
-		
+
 	}
 
 	public void add_three_product_in_cart() 
@@ -123,17 +123,17 @@ public class Productpage_pageObjects  extends TestContext implements Locator, Va
 		action.Click(P_1_addTocart);
 		action.Click(continueShopping);
 		logger.info("First Product Add");
-		
+
 		action.movetoelement(Product2);
 		action.Click(P_2_addTocart);
 		action.Click(continueShopping);
 		logger.info("Second Product Add");
-		
+
 		action.movetoelement(Product3);
 		action.Click(P_3_addTocart);
 		action.Click(continueShopping);
 		logger.info("Third Product Add");
-		
+
 		logger.info(" Add Three Product In Cart");
 
 	}
@@ -149,14 +149,14 @@ public class Productpage_pageObjects  extends TestContext implements Locator, Va
 		action.asserting("Product one is not verified", "Product one is verified successfully",product1, action.getAttribute(cart_p_1,"title"));
 		action.asserting("Product two is not verified", "Product two is verified successfully",product2, action.getAttribute(cart_p_2,"title"));
 		action.asserting("Product three is not verified", "Product three is verified successfully",product3, action.getAttribute(cart_p_3,"title"));
-	logger.info("Same Product In Cart");
+		logger.info("Same Product In Cart");
 	}
 
 	public void click_on_color_blue() {
 		javaScript_util.scrollIntoView_ByLocator(ProductView_Locator);
 		action.movetoelement(productColorBlue_Locator);
 		action.Click(productColorBlue_Locator);
-		
+
 		logger.info("Click on blue color.");
 	}
 	public void check_image_is_changed() {
@@ -166,5 +166,20 @@ public class Productpage_pageObjects  extends TestContext implements Locator, Va
 		Assert.assertTrue(ele.isDisplayed());
 		logger.info("Assertion completed and product color is changed.");
 	}
-	
+	public void SearchProducSearchBox(String Text) {
+		action.Dosendkeys(Text,searchBox_Locator);
+		logger.info("Search for the product “Dress” in the search box.");
+	}
+	public void fetchResultPrint() {
+		wait_util.waitForElementClickable(searchBoxSuggestion_Locator);
+		List<WebElement> elements = driver.findElements(searchBoxSuggestion_Locator);
+		logger.info("All product get displayed in the list with names ::>");
+
+		for (int i = 0; i < elements.size(); i++) {
+			logger.info("                                                " + (i + 1) + ") " + elements.get(i).getText());
+		}
+
+		Assert.assertEquals(7, elements.size());
+		logger.info("Validate with the Expected result as 7 => " + "Actual Result :: " + elements.size());
+	}
 }

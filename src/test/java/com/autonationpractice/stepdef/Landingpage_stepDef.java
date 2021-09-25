@@ -49,23 +49,6 @@ public class Landingpage_stepDef extends TestContext {
 	  landingpage_pageObjects.Facebook();
 	   scn.log("Customer succefully visited Facebook");
 	}
-//	
-//	@When("Send a random email id {string} in newsletter subscription text box")
-//	public void send_a_random_email_id_in_newsletter_subscription_text_box(String mailID) {
-//	    landingpage_pageObjects.send_random_emailID_in_newsletter_subscription_box(mailID);
-//	}
-//
-//
-//
-//
-//	@When("Click on proceed button")
-//	public void click_on_proceed_button() {
-//	  landingpage_pageObjects.click_Proceed_Button();
-//	}
-//	@When("Validate the message text for successful email subscription")
-//	public void validate_the_message_text_for_successful_email_subscription() {
-//	 landingpage_pageObjects.validate_text_for_successful_email_subscription();
-//	}
 
 
 

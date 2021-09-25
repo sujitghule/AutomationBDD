@@ -67,41 +67,6 @@ public class Landingpage_pageObjects extends TestContext  implements Locator,Var
 		
 		logger.info("Customer succefully visited Twitter");
 	}
-//	public void send_random_emailID_in_newsletter_subscription_box(String mailID) {
-//		javaScript_util.scrollPageDown();
-//		
-//		action.Dosendkeys(mailID, newsletterSubscriptionBox_Locator);
-//	
-//		logger.info("Email ID '" + mailID+"' in newsletter subscription box enter.");
-//	}
-//	
-//	public void click_Proceed_Button() {
-//		action.Click(submitNewsletter_Locator);
-//		
-//		logger.info("click on proceed button.");
-//	}
-//	
-//	public void validate_text_for_successful_email_subscription() {
-////		action.asserting("You Not successfully subscribed","You have successfully subscribed", successful,action.GetText(ValidateSuccessfulEmailSubscription_Locator));
-//	 String successful ="Newsletter : You have successfully subscribed to this newsletter.";
-//	 String Invalid = " Newsletter : Invalid email address.";
-//	 String Allready_Registerd = " Newsletter : This email address is already registered.";
-//		String ExpectedMassage = action.GetText(ValidateSuccessfulEmailSubscription_Locator);
-//		String InvalidMassage = action.GetText(InvalidEmailSubscription_Locator);
-//		if(ExpectedMassage == successful)
-//		{
-//			System.out.println("successful");
-//		}
-//		else if (InvalidMassage == Allready_Registerd) {
-//			System.out.println("allready");
-//			
-//		}
-//		else 
-//		{
-//			System.out.println("done");
-//		}
-//		
-//		logger.info("Newsletter Subscribed");
-//	}
+
 
 }

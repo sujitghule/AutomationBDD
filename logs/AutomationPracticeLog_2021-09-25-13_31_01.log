@@ -1,0 +1,7 @@
+2021-Sep-25 13:31:03 PM [main] INFO  com.autonationpractice.base.WebDriverFactory - Chrome Browser invoked
+2021-Sep-25 13:31:03 PM [main] INFO  com.autonationpractice.base.WebDriverFactory - Driver maximized and implicit time out set to 20 seconds
+2021-Sep-25 13:31:03 PM [main] INFO  com.autonationpractice.base.TestContext - Browser invoked.
+2021-Sep-25 13:31:10 PM [main] INFO  com.autonationpractice.base.WebDriverFactory - Browser navigated to the url: http://automationpractice.com/index.php?
+2021-Sep-25 13:31:10 PM [main] INFO  com.autonationpractice.pageObjects.Productpage_pageObjects - Search for the product “Dress” in the search box.
+2021-Sep-25 13:31:12 PM [main] INFO  io.cucumber.messages.Messages.Hook - Test case isn't passed, screenShot is captured.
+2021-Sep-25 13:31:12 PM [main] INFO  com.autonationpractice.base.TestContext - Browser quit.
