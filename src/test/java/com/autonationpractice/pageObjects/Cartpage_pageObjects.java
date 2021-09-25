@@ -74,6 +74,7 @@ public class Cartpage_pageObjects extends TestContext implements Locator,Variabl
 	{
 		action.Click(summary_chekout_Locator);
 		action.Click(addresse_chekout_Locator);
+		wait_util.waitForElementClickable(terms_service_Locator);
 		action.Click(terms_service_Locator);
 		action.Click(shiping_chekout_Locator);
 		action.Click(payment_Locator);
@@ -89,4 +90,5 @@ public class Cartpage_pageObjects extends TestContext implements Locator,Variabl
 		logger.info("Order successfully done");
 	}
 	
+
 }

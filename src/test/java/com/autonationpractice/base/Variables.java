@@ -16,4 +16,5 @@ public interface Variables {
 	public static String product1			="Faded Short Sleeve T-shirts";
 	public static String product2			="Blouse";
 	public static String product3			="Printed Chiffon Dress";
+	public static String error_msg_for_login ="You must be logged in to manage your wishlist.";
 }

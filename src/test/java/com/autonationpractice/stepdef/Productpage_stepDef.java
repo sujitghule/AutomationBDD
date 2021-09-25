@@ -118,6 +118,19 @@ public class Productpage_stepDef extends TestContext  {
 		scn.log("successfully Result Print");
 	}
 
+	@When("user remove one product from cart")
+	public void user_remove_one_product_from_cart() throws InterruptedException {
+	   productpage_pageObjects.remove_one_product();
+	   scn.log("Successfully Remove ");
+	}
+
+
+
+	@Then("user validate the remove product cart value")
+	public void user_validate_the_remove_product_cart_value() {
+	    productpage_pageObjects.validate_cart();
+	    scn.log("Successfully Validate Remove Product In Cart");
+	}
 
 
 }

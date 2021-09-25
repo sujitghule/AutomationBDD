@@ -1,0 +1,11 @@
+2021-Sep-25 20:33:42 PM [main] INFO  com.autonationpractice.base.WebDriverFactory - Chrome Browser invoked
+2021-Sep-25 20:33:42 PM [main] INFO  com.autonationpractice.base.WebDriverFactory - Driver maximized and implicit time out set to 20 seconds
+2021-Sep-25 20:33:42 PM [main] INFO  com.autonationpractice.base.TestContext - Browser invoked.
+2021-Sep-25 20:33:49 PM [main] INFO  com.autonationpractice.base.WebDriverFactory - Browser navigated to the url: http://automationpractice.com/index.php?
+2021-Sep-25 20:33:51 PM [main] INFO  com.autonationpractice.pageObjects.Productpage_pageObjects - First Product Add
+2021-Sep-25 20:33:53 PM [main] INFO  com.autonationpractice.pageObjects.Productpage_pageObjects - Second Product Add
+2021-Sep-25 20:33:54 PM [main] INFO  com.autonationpractice.pageObjects.Productpage_pageObjects - Third Product Add
+2021-Sep-25 20:33:54 PM [main] INFO  com.autonationpractice.pageObjects.Productpage_pageObjects -  Add Three Product In Cart
+2021-Sep-25 20:33:55 PM [main] INFO  com.autonationpractice.pageObjects.Productpage_pageObjects - click on cross button to remove product from cart.
+2021-Sep-25 20:33:55 PM [main] INFO  io.cucumber.messages.Messages.Hook - Test case isn't passed, screenShot is captured.
+2021-Sep-25 20:33:57 PM [main] INFO  com.autonationpractice.base.TestContext - Browser quit.

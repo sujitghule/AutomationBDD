@@ -67,7 +67,7 @@ public class Cartpage_stepDef extends TestContext {
 		scn.log("Successfully Order Done");
 	}
 
-
+	
 
 
 }

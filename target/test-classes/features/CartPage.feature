@@ -5,6 +5,8 @@
 @CartPageTest
 Feature: All test on product page of web application
 
+Verify that 'Add to Wishlist' only works after login.
+
 @BuyOrderfunctionality 
 Scenario:
  Given User open the browser

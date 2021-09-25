@@ -175,11 +175,28 @@ public class Productpage_pageObjects  extends TestContext implements Locator, Va
 		List<WebElement> elements = driver.findElements(searchBoxSuggestion_Locator);
 		logger.info("All product get displayed in the list with names ::>");
 
-		for (int i = 0; i < elements.size(); i++) {
-			logger.info("                                                " + (i + 1) + ") " + elements.get(i).getText());
+		for (int i = 0; i < elements.size(); i++) 
+		{
+			logger.info("                                           " + (i + 1) + ") " + elements.get(i).getText());
 		}
 
 		Assert.assertEquals(7, elements.size());
 		logger.info("Validate with the Expected result as 7 => " + "Actual Result :: " + elements.size());
 	}
+	
+	public void remove_one_product() throws InterruptedException
+	{
+		action.movetoelement(cart);
+		wait_util.waitForElementPresent(cart_box);
+		wait_util.waitForElementPresent(remove_btn);
+		action.Click(remove_btn);
+		Thread.sleep(5000);
+	   logger.info("click on cross button to remove product from cart.");
+		
+	}
+public void validate_cart()
+{
+	action.asserting("Cart qnty is not 2", "Cart qnty is 2", "2", action.GetText(cartQnty));
+	logger.info("Validate the cart count After remove product as");
+}
 }

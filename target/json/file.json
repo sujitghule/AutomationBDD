@@ -3,11 +3,11 @@
     "line": 6,
     "elements": [
       {
-        "start_timestamp": "2021-09-25T08:01:46.548Z",
+        "start_timestamp": "2021-09-25T15:39:23.224Z",
         "before": [
           {
             "result": {
-              "duration": 962452500,
+              "duration": 984564200,
               "status": "passed"
             },
             "match": {
@@ -16,7 +16,7 @@
           },
           {
             "result": {
-              "duration": 2215874100,
+              "duration": 2309950200,
               "status": "passed"
             },
             "match": {
@@ -25,6 +25,7 @@
           },
           {
             "result": {
+              "duration": 999200,
               "status": "passed"
             },
             "match": {
@@ -33,7 +34,7 @@
           },
           {
             "result": {
-              "duration": 978000,
+              "duration": 980600,
               "status": "passed"
             },
             "match": {
@@ -41,17 +42,17 @@
             }
           }
         ],
-        "line": 57,
-        "name": "Validate the search box is enabled to perform sendkeys operation.",
+        "line": 66,
+        "name": "Validate cart value",
         "description": "",
-        "id": "all-test-on-product-page-of-web-application;validate-the-search-box-is-enabled-to-perform-sendkeys-operation.",
+        "id": "all-test-on-product-page-of-web-application;validate-cart-value",
         "after": [
           {
             "output": [
               "Test case is passed, No screenShot is captured."
             ],
             "result": {
-              "duration": 6996900,
+              "duration": 2002200,
               "status": "passed"
             },
             "match": {
@@ -63,7 +64,7 @@
               "Browser Closed"
             ],
             "result": {
-              "duration": 405768100,
+              "duration": 1297274400,
               "status": "passed"
             },
             "match": {
@@ -76,10 +77,10 @@
         "steps": [
           {
             "result": {
-              "duration": 8967118200,
+              "duration": 5670507900,
               "status": "passed"
             },
-            "line": 58,
+            "line": 67,
             "name": "User open the browser",
             "match": {
               "location": "com.autonationpractice.stepdef.Landingpage_stepDef.user_open_the_browser()"
@@ -87,32 +88,41 @@
             "keyword": "Given "
           },
           {
+            "output": [
+              "successfully Add Three Product In Cart"
+            ],
             "result": {
-              "duration": 149911500,
+              "duration": 5737733700,
               "status": "passed"
             },
-            "line": 59,
-            "name": "Search for the product \"Dress\" in the given search box",
+            "line": 68,
+            "name": "user add three product in cart",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"Dress\"",
-                  "offset": 23
-                }
-              ],
-              "location": "com.autonationpractice.stepdef.Productpage_stepDef.search_for_the_product_in_the_given_search_box(java.lang.String)"
+              "location": "com.autonationpractice.stepdef.Productpage_stepDef.user_add_three_product_in_cart()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5521771400,
+              "status": "passed"
+            },
+            "line": 69,
+            "name": "user remove one product from cart",
+            "match": {
+              "location": "com.autonationpractice.stepdef.Productpage_stepDef.user_remove_one_product_from_cart()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 2083301200,
+              "duration": 34003500,
               "status": "passed"
             },
-            "line": 60,
-            "name": "Fetch the result and print the result",
+            "line": 70,
+            "name": "user validate the remove product cart value",
             "match": {
-              "location": "com.autonationpractice.stepdef.Productpage_stepDef.fetch_the_result_and_print_the_result()"
+              "location": "com.autonationpractice.stepdef.Productpage_stepDef.user_validate_the_remove_product_cart_value()"
             },
             "keyword": "Then "
           }
@@ -122,13 +132,13 @@
             "name": "@ProductPageTest"
           },
           {
-            "name": "@ValidateSearchBox"
+            "name": "@RemoveValidatecart"
           }
         ]
       }
     ],
     "name": "All test on product page of web application",
-    "description": "\t10. Fetch the all product price and get its total\n\t11. Send a Friend Feature\n  17. Validate cart value is updating\n  18. Validate same products added in cart\n  20. Validate a product can be removed from cart feature",
+    "description": "\t9. Validate products are matching with the name\n\t10. Fetch the all product price and get its total\n\t11. Send a Friend Feature\n\t12. Change in the image using Color Feature\n  17. Validate cart value is updating\n  18. Validate same products added in cart\n  20. Validate a product can be removed from cart feature",
     "id": "all-test-on-product-page-of-web-application",
     "keyword": "Feature",
     "uri": "classpath:features/ProductPage.feature",

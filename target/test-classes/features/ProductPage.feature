@@ -62,7 +62,13 @@ When user add three product in cart
 Then user validate add same product in cart    
       
   
-   
+@RemoveValidatecart
+  Scenario: Validate cart value
+  Given User open the browser
+  When user add three product in cart 
+  And user remove one product from cart
+  Then user validate the remove product cart value
+  
   
       
       

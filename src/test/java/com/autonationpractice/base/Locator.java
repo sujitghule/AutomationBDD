@@ -26,11 +26,13 @@ public interface Locator {
 	public static By checkout_Locator 		= By.xpath("//span[normalize-space()='Proceed to checkout']");
 	public static By summary_chekout_Locator 	= By.xpath("//a[@class='button btn btn-default standard-checkout button-medium']//span[contains(text(),'Proceed to checkout')]");
 	public static By addresse_chekout_Locator 	= By.xpath("//button[@name='processAddress']//span[contains(text(),'Proceed to checkout')]");
-	public static By terms_service_Locator 		= By.xpath("//div[@class='checker']//span[@class='checked']//input[@id='cgv']");
+	public static By terms_service_Locator 		= By.xpath("//*[@id='cgv']");
 	public static By shiping_chekout_Locator 	= By.xpath("//button[@name='processCarrier']//span[contains(text(),'Proceed to checkout')]");
 	public static By payment_Locator 			= By.xpath("//a[@title='Pay by bank wire']");
 	public static By confiram_order				= By.xpath("//span[normalize-space()='I confirm my order']");
 	public static By order_confiram_Locator 	= By.xpath("//strong[normalize-space()='Your order on My Store is complete.']");
+	public static By Add_to_Wishlist  			= By.xpath("//a[normalize-space()='Add to Wishlist']");
+	public static By Ask_login					= By.xpath("//p[@class='fancybox-error']");
 	
 	//-------------------------------------------Landing Page Locator -----------------------------------------------------------
 	
@@ -61,9 +63,9 @@ public interface Locator {
 	public static By P_3_addTocart 			= By.xpath("//ul[@id='homefeatured']/li/div/div/div/a[@data-id-product='7']/span");
 	public static By continueShopping 		= By.xpath("//span[@title='Continue shopping']//span[1]");
 	public static By cart 					= By.xpath("//div[@class='shopping_cart']//a");
-	public static By cart_box			    = By.xpath("//div[@class='cart_block block exclusive']");
+	public static By cart_box =By.xpath("//div[@class='cart_block block exclusive']");
 	public static By cartQnty 				= By.xpath("//div[@class='shopping_cart']/a/span[@class='ajax_cart_quantity unvisible']");
-	public static By remove_btn 			= By.xpath("//a[@title='Faded Shor...']//parent::dt//span[@class='remove_link']");
+	public static By remove_btn =By.xpath("//dt[@data-id='cart_block_product_1_1_0']/span/a");
 	public static By cart_p_1 				= By.xpath("//div[@class='cart-info']//div//a[@title='Faded Short Sleeve T-shirts']");
 	public static By cart_p_2 				= By.xpath("//div[@class='cart-info']//div//a[@title='Blouse']");
 	public static By cart_p_3 				= By.xpath("//div[@class='cart-info']//div//a[@title='Printed Chiffon Dress']");
