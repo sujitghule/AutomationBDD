@@ -1,0 +1,7 @@
+2021-Sep-25 12:12:14 PM [main] INFO  com.autonationpractice.base.WebDriverFactory - Chrome Browser invoked
+2021-Sep-25 12:12:15 PM [main] INFO  com.autonationpractice.base.WebDriverFactory - Driver maximized and implicit time out set to 20 seconds
+2021-Sep-25 12:12:15 PM [main] INFO  com.autonationpractice.base.TestContext - Browser invoked.
+2021-Sep-25 12:12:20 PM [main] INFO  com.autonationpractice.base.WebDriverFactory - Browser navigated to the url: http://automationpractice.com/index.php?
+2021-Sep-25 12:12:20 PM [main] INFO  com.autonationpractice.pageObjects.Landingpage_pageObjects - Email ID 'alexSon@gmail.com' in newsletter subscription box enter.
+2021-Sep-25 12:12:23 PM [main] INFO  io.cucumber.messages.Messages.Hook - Test case isn't passed, screenShot is captured.
+2021-Sep-25 12:12:23 PM [main] INFO  com.autonationpractice.base.TestContext - Browser quit.

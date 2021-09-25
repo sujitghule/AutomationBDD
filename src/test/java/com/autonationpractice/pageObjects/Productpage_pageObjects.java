@@ -13,12 +13,14 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import com.autonationpractice.base.Locator;
 import com.autonationpractice.base.TestContext;
 import com.autonationpractice.base.Variables;
-import com.autonationpractice.utilites.Action_utilites;
-import com.autonationpractice.utilites.JavaScript_utilites;
-import com.autonationpractice.utilites.wait_utilites;
 
-import io.cucumber.java.Before;
+
 import io.cucumber.java.Scenario;
+
+/**
+ * @author Sujit k. Ghule
+ * @Description: Test com.automationPractice-BDD FW development
+ */
 
 public class Productpage_pageObjects  extends TestContext implements Locator, Variables{
 	private static final Logger logger = LogManager.getLogger(Productpage_pageObjects.class);
@@ -35,8 +37,6 @@ public class Productpage_pageObjects  extends TestContext implements Locator, Va
 
 	}
 
-	
-	
 	public void validateDressesOption(String productName) {
 		WebElement element = driver.findElement(Dresses_locator);
 
@@ -62,8 +62,6 @@ public class Productpage_pageObjects  extends TestContext implements Locator, Va
 			price_total = price_total + Float.parseFloat(price.get(i).getText().substring(1));
 		}
 		Assert.assertEquals("Product price total are not match", Expected_Total, price_total, Expected_Total);
-		
-	
 		logger.info("The sum of all products Match with actual Total");
 	}
 	
@@ -72,21 +70,25 @@ public class Productpage_pageObjects  extends TestContext implements Locator, Va
 	{
 		action.Click(signIn);
 		action.Dosendkeys(username, Email_address);
+		logger.info("Enter mail id ::> " + username);
 		action.Dosendkeys(password, Pass_word);
+		logger.info("Enter password ::> " + password);
 		action.Click(Sign_In);
+		logger.info("click on SignIn Button.");
 		
 	}
 
 	public void select_T_shirt_category()
 	{
 		action.Click(t_shirt);
+		logger.info("select T-shirts option.");
 	}
 
 	public void select_T_shirt_more_option()
 	{
 		action.movetoelement(elementhover);
-
 		action.Click(morebutton);
+		logger.info("select More option.");
 	}
 
 	public void click_on_send_to_friend()
@@ -97,8 +99,12 @@ public class Productpage_pageObjects  extends TestContext implements Locator, Va
 	public void fill_deatils_click_on_send_button(String FriendName, String FriendMailID)
 	{
 		action.Dosendkeys(FriendName, friend_Name);
+		logger.info("enter Friend Name ::> " + FriendName);
 		action.Dosendkeys(FriendMailID, friendEmail_address);
+		logger.info("enter Friend Mail ID ::> " + FriendMailID);
+
 		action.Click(send_button);
+		logger.info("Click on Send button.");
 	}
 
 	public void validate_message()
@@ -107,6 +113,8 @@ public class Productpage_pageObjects  extends TestContext implements Locator, Va
 		String name=driver.findElement(By.xpath("//p[normalize-space()='Your e-mail has been sent successfully']")).getText();
 
 		Assert.assertEquals("Your e-mail has been Not sent successfully",sucess,name);
+		logger.info("Send E-mail Successfully");
+		
 	}
 
 	public void add_three_product_in_cart() 
@@ -126,7 +134,7 @@ public class Productpage_pageObjects  extends TestContext implements Locator, Va
 		action.Click(continueShopping);
 		logger.info("Third Product Add");
 		
-		logger.info("Sucessfully Add Three Product");
+		logger.info(" Add Three Product In Cart");
 
 	}
 
@@ -141,7 +149,22 @@ public class Productpage_pageObjects  extends TestContext implements Locator, Va
 		action.asserting("Product one is not verified", "Product one is verified successfully",product1, action.getAttribute(cart_p_1,"title"));
 		action.asserting("Product two is not verified", "Product two is verified successfully",product2, action.getAttribute(cart_p_2,"title"));
 		action.asserting("Product three is not verified", "Product three is verified successfully",product3, action.getAttribute(cart_p_3,"title"));
+	logger.info("Same Product In Cart");
 	}
 
+	public void click_on_color_blue() {
+		javaScript_util.scrollIntoView_ByLocator(ProductView_Locator);
+		action.movetoelement(productColorBlue_Locator);
+		action.Click(productColorBlue_Locator);
+		
+		logger.info("Click on blue color.");
+	}
+	public void check_image_is_changed() {
+		javaScript_util.scrollIntoView_ByLocator(ColorChangeProduct_Locator);
+		wait_util.waitForElementPresent(ColorChangeProduct_Locator);
+		WebElement ele = driver.findElement(ColorChangeProduct_Locator);
+		Assert.assertTrue(ele.isDisplayed());
+		logger.info("Assertion completed and product color is changed.");
+	}
 	
 }

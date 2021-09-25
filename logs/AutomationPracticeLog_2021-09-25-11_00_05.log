@@ -1,0 +1,21 @@
+2021-Sep-25 11:00:08 AM [main] INFO  com.autonationpractice.base.WebDriverFactory - Chrome Browser invoked
+2021-Sep-25 11:00:08 AM [main] INFO  com.autonationpractice.base.WebDriverFactory - Driver maximized and implicit time out set to 20 seconds
+2021-Sep-25 11:00:08 AM [main] INFO  com.autonationpractice.base.TestContext - Browser invoked.
+2021-Sep-25 11:00:13 AM [main] INFO  com.autonationpractice.base.WebDriverFactory - Browser navigated to the url: http://automationpractice.com/index.php?
+2021-Sep-25 11:00:18 AM [main] INFO  com.autonationpractice.pageObjects.Landingpage_pageObjects - Customer succefully visited Youtube
+2021-Sep-25 11:00:18 AM [main] INFO  io.cucumber.messages.Messages.Hook - Test case is passed, No screenShot is captured.
+2021-Sep-25 11:00:18 AM [main] INFO  com.autonationpractice.base.TestContext - Browser quit.
+2021-Sep-25 11:00:20 AM [main] INFO  com.autonationpractice.base.WebDriverFactory - Chrome Browser invoked
+2021-Sep-25 11:00:20 AM [main] INFO  com.autonationpractice.base.WebDriverFactory - Driver maximized and implicit time out set to 20 seconds
+2021-Sep-25 11:00:20 AM [main] INFO  com.autonationpractice.base.TestContext - Browser invoked.
+2021-Sep-25 11:00:28 AM [main] INFO  com.autonationpractice.base.WebDriverFactory - Browser navigated to the url: http://automationpractice.com/index.php?
+2021-Sep-25 11:00:35 AM [main] INFO  com.autonationpractice.pageObjects.Landingpage_pageObjects - Customer succefully visited Twitter
+2021-Sep-25 11:00:35 AM [main] INFO  io.cucumber.messages.Messages.Hook - Test case is passed, No screenShot is captured.
+2021-Sep-25 11:00:36 AM [main] INFO  com.autonationpractice.base.TestContext - Browser quit.
+2021-Sep-25 11:00:37 AM [main] INFO  com.autonationpractice.base.WebDriverFactory - Chrome Browser invoked
+2021-Sep-25 11:00:38 AM [main] INFO  com.autonationpractice.base.WebDriverFactory - Driver maximized and implicit time out set to 20 seconds
+2021-Sep-25 11:00:38 AM [main] INFO  com.autonationpractice.base.TestContext - Browser invoked.
+2021-Sep-25 11:00:46 AM [main] INFO  com.autonationpractice.base.WebDriverFactory - Browser navigated to the url: http://automationpractice.com/index.php?
+2021-Sep-25 11:00:48 AM [main] INFO  com.autonationpractice.pageObjects.Landingpage_pageObjects - Customer succefully visited Facebook
+2021-Sep-25 11:00:48 AM [main] INFO  io.cucumber.messages.Messages.Hook - Test case is passed, No screenShot is captured.
+2021-Sep-25 11:00:48 AM [main] INFO  com.autonationpractice.base.TestContext - Browser quit.

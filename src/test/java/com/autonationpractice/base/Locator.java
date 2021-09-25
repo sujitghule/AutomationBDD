@@ -26,7 +26,7 @@ public interface Locator {
 	public static By checkout_Locator 		= By.xpath("//span[normalize-space()='Proceed to checkout']");
 	public static By summary_chekout_Locator 	= By.xpath("//a[@class='button btn btn-default standard-checkout button-medium']//span[contains(text(),'Proceed to checkout')]");
 	public static By addresse_chekout_Locator 	= By.xpath("//button[@name='processAddress']//span[contains(text(),'Proceed to checkout')]");
-	public static By terms_service_Locator 		= By.xpath("//div[@id='uniform-cgv']//input[@id='cgv']");
+	public static By terms_service_Locator 		= By.xpath("//div[@class='checker']//span[@class='checked']//input[@id='cgv']");
 	public static By shiping_chekout_Locator 	= By.xpath("//button[@name='processCarrier']//span[contains(text(),'Proceed to checkout')]");
 	public static By payment_Locator 			= By.xpath("//a[@title='Pay by bank wire']");
 	public static By confiram_order				= By.xpath("//span[normalize-space()='I confirm my order']");
@@ -41,6 +41,10 @@ public interface Locator {
 	public static By twitter_icon 					= By.xpath("//li[@class='twitter']");
 	public static By ValidateTwitterHandle_Locator	= By.xpath("//div[@class='css-1dbjc4n r-1wbh5a2 r-dnmrzs r-1ny4l3l']//span[text()='Selenium Framework']");
 
+	public static By newsletterSubscriptionBox_Locator = By.xpath("//input[@id='newsletter-input']");
+	public static By submitNewsletter_Locator = By.xpath("//button[@name='submitNewsletter']");
+	public static By ValidateSuccessfulEmailSubscription_Locator = By.xpath("//p[@class='alert alert-success']");
+	public static By InvalidEmailSubscription_Locator = By.xpath("//p[@class='alert alert-danger']");
 	//-------------------------------------------Product Page Locator -----------------------------------------------------------
 	
 	
@@ -67,5 +71,6 @@ public interface Locator {
 	public static By priceOfProduct_locator = By.xpath("//div[@class='right-block']//span[@itemprop='price']");
 	public static By ProductView_Locator	= By.xpath("//a[@class='product_img_link']");
 	
-
+	public static By productColorBlue_Locator = By.xpath("//ul[@class='color_to_pick_list clearfix']/li/a[@id='color_2']");
+	public static By ColorChangeProduct_Locator = By.xpath("//img[@id='bigpic']");
 }

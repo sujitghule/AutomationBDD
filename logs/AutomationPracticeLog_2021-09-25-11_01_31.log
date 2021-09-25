@@ -1,0 +1,44 @@
+2021-Sep-25 11:01:33 AM [main] INFO  com.autonationpractice.base.WebDriverFactory - Chrome Browser invoked
+2021-Sep-25 11:01:34 AM [main] INFO  com.autonationpractice.base.WebDriverFactory - Driver maximized and implicit time out set to 20 seconds
+2021-Sep-25 11:01:34 AM [main] INFO  com.autonationpractice.base.TestContext - Browser invoked.
+2021-Sep-25 11:01:42 AM [main] INFO  com.autonationpractice.base.WebDriverFactory - Browser navigated to the url: http://automationpractice.com/index.php?
+2021-Sep-25 11:01:47 AM [main] INFO  com.autonationpractice.pageObjects.Productpage_pageObjects - The sum of all products Match with actual Total
+2021-Sep-25 11:01:47 AM [main] INFO  io.cucumber.messages.Messages.Hook - Test case is passed, No screenShot is captured.
+2021-Sep-25 11:01:47 AM [main] INFO  com.autonationpractice.base.TestContext - Browser quit.
+2021-Sep-25 11:01:48 AM [main] INFO  com.autonationpractice.base.WebDriverFactory - Chrome Browser invoked
+2021-Sep-25 11:01:48 AM [main] INFO  com.autonationpractice.base.WebDriverFactory - Driver maximized and implicit time out set to 20 seconds
+2021-Sep-25 11:01:48 AM [main] INFO  com.autonationpractice.base.TestContext - Browser invoked.
+2021-Sep-25 11:01:56 AM [main] INFO  com.autonationpractice.base.WebDriverFactory - Browser navigated to the url: http://automationpractice.com/index.php?
+2021-Sep-25 11:01:58 AM [main] INFO  com.autonationpractice.pageObjects.Productpage_pageObjects - Enter mail id ::> ghulesujit1@gmail.com
+2021-Sep-25 11:01:58 AM [main] INFO  com.autonationpractice.pageObjects.Productpage_pageObjects - Enter password ::> sujit1234@
+2021-Sep-25 11:02:01 AM [main] INFO  com.autonationpractice.pageObjects.Productpage_pageObjects - click on SignIn Button.
+2021-Sep-25 11:02:03 AM [main] INFO  com.autonationpractice.pageObjects.Productpage_pageObjects - select T-shirts option.
+2021-Sep-25 11:02:06 AM [main] INFO  com.autonationpractice.pageObjects.Productpage_pageObjects - select More option.
+2021-Sep-25 11:02:06 AM [main] INFO  com.autonationpractice.pageObjects.Productpage_pageObjects - enter Friend Name ::> mahesh nikam
+2021-Sep-25 11:02:06 AM [main] INFO  com.autonationpractice.pageObjects.Productpage_pageObjects - enter Friend Mail ID ::> maheshnikam1@gmail.com
+2021-Sep-25 11:02:07 AM [main] INFO  com.autonationpractice.pageObjects.Productpage_pageObjects - Click on Send button.
+2021-Sep-25 11:02:08 AM [main] INFO  com.autonationpractice.pageObjects.Productpage_pageObjects - Send E-mail Successfully
+2021-Sep-25 11:02:08 AM [main] INFO  io.cucumber.messages.Messages.Hook - Test case is passed, No screenShot is captured.
+2021-Sep-25 11:02:08 AM [main] INFO  com.autonationpractice.base.TestContext - Browser quit.
+2021-Sep-25 11:02:09 AM [main] INFO  com.autonationpractice.base.WebDriverFactory - Chrome Browser invoked
+2021-Sep-25 11:02:09 AM [main] INFO  com.autonationpractice.base.WebDriverFactory - Driver maximized and implicit time out set to 20 seconds
+2021-Sep-25 11:02:09 AM [main] INFO  com.autonationpractice.base.TestContext - Browser invoked.
+2021-Sep-25 11:02:16 AM [main] INFO  com.autonationpractice.base.WebDriverFactory - Browser navigated to the url: http://automationpractice.com/index.php?
+2021-Sep-25 11:02:18 AM [main] INFO  com.autonationpractice.pageObjects.Productpage_pageObjects - First Product Add
+2021-Sep-25 11:02:19 AM [main] INFO  com.autonationpractice.pageObjects.Productpage_pageObjects - Second Product Add
+2021-Sep-25 11:02:21 AM [main] INFO  com.autonationpractice.pageObjects.Productpage_pageObjects - Third Product Add
+2021-Sep-25 11:02:21 AM [main] INFO  com.autonationpractice.pageObjects.Productpage_pageObjects -  Add Three Product In Cart
+2021-Sep-25 11:02:21 AM [main] INFO  com.autonationpractice.pageObjects.Productpage_pageObjects - Same Product In Cart
+2021-Sep-25 11:02:21 AM [main] INFO  io.cucumber.messages.Messages.Hook - Test case is passed, No screenShot is captured.
+2021-Sep-25 11:02:21 AM [main] INFO  com.autonationpractice.base.TestContext - Browser quit.
+2021-Sep-25 11:02:23 AM [main] INFO  com.autonationpractice.base.WebDriverFactory - Chrome Browser invoked
+2021-Sep-25 11:02:23 AM [main] INFO  com.autonationpractice.base.WebDriverFactory - Driver maximized and implicit time out set to 20 seconds
+2021-Sep-25 11:02:23 AM [main] INFO  com.autonationpractice.base.TestContext - Browser invoked.
+2021-Sep-25 11:02:31 AM [main] INFO  com.autonationpractice.base.WebDriverFactory - Browser navigated to the url: http://automationpractice.com/index.php?
+2021-Sep-25 11:02:32 AM [main] INFO  com.autonationpractice.pageObjects.Productpage_pageObjects - First Product Add
+2021-Sep-25 11:02:35 AM [main] INFO  com.autonationpractice.pageObjects.Productpage_pageObjects - Second Product Add
+2021-Sep-25 11:02:36 AM [main] INFO  com.autonationpractice.pageObjects.Productpage_pageObjects - Third Product Add
+2021-Sep-25 11:02:36 AM [main] INFO  com.autonationpractice.pageObjects.Productpage_pageObjects -  Add Three Product In Cart
+2021-Sep-25 11:02:37 AM [main] INFO  com.autonationpractice.pageObjects.Productpage_pageObjects - Cart Product Value Same
+2021-Sep-25 11:02:37 AM [main] INFO  io.cucumber.messages.Messages.Hook - Test case is passed, No screenShot is captured.
+2021-Sep-25 11:02:38 AM [main] INFO  com.autonationpractice.base.TestContext - Browser quit.

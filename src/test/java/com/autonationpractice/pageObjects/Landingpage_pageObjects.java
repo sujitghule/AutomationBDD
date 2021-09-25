@@ -1,18 +1,22 @@
 package com.autonationpractice.pageObjects;
 
+import static org.junit.Assert.assertTrue;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.autonationpractice.base.Locator;
 import com.autonationpractice.base.TestContext;
 import com.autonationpractice.base.Variables;
-import com.autonationpractice.utilites.Action_utilites;
-import com.autonationpractice.utilites.JavaScript_utilites;
-import com.autonationpractice.utilites.wait_utilites;
-
 import io.cucumber.java.Scenario;
+
+/**
+ * @author Sujit k. Ghule
+ * @Description: Test com.automationPractice-BDD FW development
+ */
 
 public class Landingpage_pageObjects extends TestContext  implements Locator,Variables {
 
@@ -31,7 +35,6 @@ public class Landingpage_pageObjects extends TestContext  implements Locator,Var
 	public void Youtube()
 	{
 		javaScript_util.scrollPageDown();
-		javaScript_util.drawBorder_Bylocator(youtube_icon);
 		action.Click(youtube_icon);
 		action.windowHandlle();
 		System.out.println(driver.getCurrentUrl());
@@ -64,4 +67,41 @@ public class Landingpage_pageObjects extends TestContext  implements Locator,Var
 		
 		logger.info("Customer succefully visited Twitter");
 	}
+//	public void send_random_emailID_in_newsletter_subscription_box(String mailID) {
+//		javaScript_util.scrollPageDown();
+//		
+//		action.Dosendkeys(mailID, newsletterSubscriptionBox_Locator);
+//	
+//		logger.info("Email ID '" + mailID+"' in newsletter subscription box enter.");
+//	}
+//	
+//	public void click_Proceed_Button() {
+//		action.Click(submitNewsletter_Locator);
+//		
+//		logger.info("click on proceed button.");
+//	}
+//	
+//	public void validate_text_for_successful_email_subscription() {
+////		action.asserting("You Not successfully subscribed","You have successfully subscribed", successful,action.GetText(ValidateSuccessfulEmailSubscription_Locator));
+//	 String successful ="Newsletter : You have successfully subscribed to this newsletter.";
+//	 String Invalid = " Newsletter : Invalid email address.";
+//	 String Allready_Registerd = " Newsletter : This email address is already registered.";
+//		String ExpectedMassage = action.GetText(ValidateSuccessfulEmailSubscription_Locator);
+//		String InvalidMassage = action.GetText(InvalidEmailSubscription_Locator);
+//		if(ExpectedMassage == successful)
+//		{
+//			System.out.println("successful");
+//		}
+//		else if (InvalidMassage == Allready_Registerd) {
+//			System.out.println("allready");
+//			
+//		}
+//		else 
+//		{
+//			System.out.println("done");
+//		}
+//		
+//		logger.info("Newsletter Subscribed");
+//	}
+
 }

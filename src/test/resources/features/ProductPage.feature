@@ -45,5 +45,13 @@ Scenario: Fetch the all product price and get its total
   Given User open the browser
   When user add three product in cart 
   Then user validate the cart product value  
+  
+  @ChangeImageColor
+   Scenario: User Change in the image using Color Feature
+   Given User open the browser
+    And user click on T-shirt category
+    And Click on Color Blue link
+    Then Check the Image is changed
+  
       
       

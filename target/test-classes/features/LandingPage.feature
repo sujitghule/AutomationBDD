@@ -28,6 +28,12 @@ Feature: All test on landing page of web application
  Given User open the browser
 	Then user verify that successfully visited fb page
 	
-  
+#@NewsletterSubscription
+   #Scenario: User doing Newsletter subscription
+     #Given User open the browser
+    #When Send a random email id "alexSon@gmail.com" in newsletter subscription text box
+    #And Click on proceed button
+    #And Validate the message text for successful email subscription
+ #
 
   

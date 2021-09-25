@@ -10,6 +10,7 @@ public interface Variables {
 	public static String Youtubemessage ="Selenium Framework";
 	public static String FaceBookmessage ="Selenium Framework";
 	public static String Twittermessage ="Selenium Framework";
+	public static String successful ="Newsletter : You have successfully subscribed to this newsletter.";
 	
 	//-------------------------------------------Product Page Locator -----------------------------------------------------------
 	public static String product1			="Faded Short Sleeve T-shirts";

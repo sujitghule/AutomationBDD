@@ -48,9 +48,9 @@ public class TestContext {
     public void intializePageObjects(){
     	
     	wait =new WebDriverWait(driver, 30);
-    	action = new Action_utilites(driver, wait);
+    	action = new Action_utilites(driver, wait, scn);
     	wait_util = new wait_utilites(driver, wait);
-    	javaScript_util = new JavaScript_utilites(driver, wait);
+    	javaScript_util = new JavaScript_utilites(driver, wait, scn);
     	landingpage_pageObjects = new Landingpage_pageObjects(driver, wait, scn);
     	cartpage_pageObjects = new Cartpage_pageObjects(driver, wait, scn);
     	productpage_pageObjects = new Productpage_pageObjects(driver, wait, scn);
