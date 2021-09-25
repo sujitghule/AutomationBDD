@@ -119,7 +119,7 @@ public class Productpage_stepDef extends TestContext  {
 	}
 
 	@When("user remove one product from cart")
-	public void user_remove_one_product_from_cart() throws InterruptedException {
+	public void user_remove_one_product_from_cart()  {
 	   productpage_pageObjects.remove_one_product();
 	   scn.log("Successfully Remove ");
 	}

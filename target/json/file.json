@@ -3,11 +3,11 @@
     "line": 6,
     "elements": [
       {
-        "start_timestamp": "2021-09-25T15:39:23.224Z",
+        "start_timestamp": "2021-09-25T15:52:25.165Z",
         "before": [
           {
             "result": {
-              "duration": 984564200,
+              "duration": 942520300,
               "status": "passed"
             },
             "match": {
@@ -16,7 +16,7 @@
           },
           {
             "result": {
-              "duration": 2309950200,
+              "duration": 2431243000,
               "status": "passed"
             },
             "match": {
@@ -25,7 +25,7 @@
           },
           {
             "result": {
-              "duration": 999200,
+              "duration": 1998100,
               "status": "passed"
             },
             "match": {
@@ -34,7 +34,7 @@
           },
           {
             "result": {
-              "duration": 980600,
+              "duration": 1000500,
               "status": "passed"
             },
             "match": {
@@ -52,7 +52,7 @@
               "Test case is passed, No screenShot is captured."
             ],
             "result": {
-              "duration": 2002200,
+              "duration": 1999300,
               "status": "passed"
             },
             "match": {
@@ -64,7 +64,7 @@
               "Browser Closed"
             ],
             "result": {
-              "duration": 1297274400,
+              "duration": 446914300,
               "status": "passed"
             },
             "match": {
@@ -77,7 +77,7 @@
         "steps": [
           {
             "result": {
-              "duration": 5670507900,
+              "duration": 5969133700,
               "status": "passed"
             },
             "line": 67,
@@ -92,7 +92,7 @@
               "successfully Add Three Product In Cart"
             ],
             "result": {
-              "duration": 5737733700,
+              "duration": 4860693700,
               "status": "passed"
             },
             "line": 68,
@@ -103,8 +103,11 @@
             "keyword": "When "
           },
           {
+            "output": [
+              "Successfully Remove "
+            ],
             "result": {
-              "duration": 5521771400,
+              "duration": 3360139800,
               "status": "passed"
             },
             "line": 69,
@@ -115,8 +118,11 @@
             "keyword": "And "
           },
           {
+            "output": [
+              "Successfully Validate Remove Product In Cart"
+            ],
             "result": {
-              "duration": 34003500,
+              "duration": 40977000,
               "status": "passed"
             },
             "line": 70,

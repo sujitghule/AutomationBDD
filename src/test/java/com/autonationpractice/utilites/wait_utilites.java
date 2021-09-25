@@ -33,4 +33,12 @@ public class wait_utilites {
 		wait.until(ExpectedConditions.presenceOfElementLocated(locator));
 	}
 
+	public  void Wait_KiloBytes() {
+		try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+	}
+
 }

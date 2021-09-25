@@ -184,13 +184,13 @@ public class Productpage_pageObjects  extends TestContext implements Locator, Va
 		logger.info("Validate with the Expected result as 7 => " + "Actual Result :: " + elements.size());
 	}
 	
-	public void remove_one_product() throws InterruptedException
+	public void remove_one_product() 
 	{
 		action.movetoelement(cart);
 		wait_util.waitForElementPresent(cart_box);
 		wait_util.waitForElementPresent(remove_btn);
 		action.Click(remove_btn);
-		Thread.sleep(5000);
+		wait_util.Wait_KiloBytes();
 	   logger.info("click on cross button to remove product from cart.");
 		
 	}
